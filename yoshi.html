@@ -1,0 +1,143 @@
+<html><body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bonsai/0.4/bonsai.min.js"></script>
+<div id="movie"></div>
+<script>
+  bonsai.run(document.getElementById('movie'), {
+    code: function() {
+
+var LeftEye = new Ellipse(150,145,55,105);
+LeftEye.fill('green');
+LeftEye.stroke('black',2);
+LeftEye.addTo(stage);
+var RightEye = new Ellipse(250,145,55,105)
+RightEye.fill('green');
+RightEye.stroke('black',2);
+RightEye.addTo(stage);
+var RightEye = new Ellipse(230,180,55,95)
+RightEye.fill('green');
+RightEye.addTo(stage);
+var LeftMiddleEye = new Ellipse(150,165,35,80);
+LeftMiddleEye.fill('white');
+LeftMiddleEye.addTo(stage);
+var RightMiddleEye = new Ellipse(250,165,35,80);
+RightMiddleEye.fill('white');
+RightMiddleEye.addTo(stage);
+var LeftSmallEye = new Ellipse(154,170,25,50);
+LeftSmallEye.fill('black');
+LeftSmallEye.addTo(stage);
+var RightSmallEye = new Ellipse(248,170,25,50);
+RightSmallEye.fill('black');
+RightSmallEye.addTo(stage);
+var LeftTinyEye = new Ellipse(154,154,5,10);
+LeftTinyEye.fill('white');
+LeftTinyEye.addTo(stage);
+var RightTinyEye = new Ellipse(244,154,5,10);
+RightTinyEye.fill('white');
+RightTinyEye.addTo(stage);
+var BigMouth = new Ellipse(200,430,75,95);
+BigMouth.fill('white');
+BigMouth.stroke('black',3);
+BigMouth.addTo(stage);
+var LeftCheek = new Circle(150,360,100);
+LeftCheek.fill('green');
+LeftCheek.stroke('black',2);
+LeftCheek.addTo(stage);
+var RightCheek = new Circle(250,360,100);
+RightCheek.fill('green');
+RightCheek.stroke('black',2);
+RightCheek.addTo(stage);
+var LeftCheek2 = new Circle(135,380,75);
+LeftCheek2.fill('white');
+LeftCheek2.addTo(stage);
+var RightCheek2 = new Circle(265,380,75);
+RightCheek2.fill('white');
+RightCheek2.addTo(stage);
+var BigMouth = new Ellipse(200,430,75,95);
+BigMouth.fill('white');
+BigMouth.addTo(stage);
+var MiddleMouth = new Ellipse(200,430,55,75);
+MiddleMouth.fill('black');
+MiddleMouth.stroke('black',3);
+MiddleMouth.addTo(stage);
+var Tongue = new Ellipse (200,470,35,95);
+Tongue.fill('pink');
+Tongue.stroke('black',1);
+Tongue.addTo(stage);
+var TongueLine = new Rect(199,485,1,80,[1]);
+TongueLine.fill('black');
+TongueLine.addTo(stage);
+var Apple = new Circle(200,545,13);
+Apple.fill('red');
+Apple.addTo(stage);
+var Apple2 = new Circle(194,540,6);
+Apple2.fill('yellow');
+Apple2.addTo(stage);
+var Apple3 = new Circle(197,541,6);
+Apple3.fill('yellow');
+Apple3.addTo(stage);
+var Apple4 = new Circle(200,542,6);
+Apple4.fill('yellow');
+Apple4.addTo(stage);
+var Apple5 = new Circle(203,541,6);
+Apple5.fill('yellow');
+Apple5.addTo(stage);
+var Apple6 = new Circle(206,540,6);
+Apple6.fill('yellow');
+Apple6.addTo(stage);
+var Apple7 = new Circle(196,537,6);
+Apple7.fill('yellow');
+Apple7.addTo(stage);
+var Apple8 = new Circle(198,536,6);
+Apple8.fill('yellow');
+Apple8.addTo(stage);
+var Apple9 = new Circle(204,537,6);
+Apple9.fill('yellow');
+Apple9.addTo(stage);
+var Stem = new Rect(199,529,3,10,[1]);
+Stem.fill('brown');
+Stem.addTo(stage);
+var tongue = new Group();
+Tongue.addTo(tongue);
+TongueLine.addTo(tongue);
+Apple.addTo(tongue);
+Apple2.addTo(tongue);
+Apple3.addTo(tongue);
+Apple4.addTo(tongue);
+Apple5.addTo(tongue);
+Apple6.addTo(tongue);
+Apple7.addTo(tongue);
+Apple8.addTo(tongue);
+Apple9.addTo(tongue);
+Stem.addTo(tongue);
+tongue.addTo(stage);
+tongue.animate(new KeyframeAnimation('3s',{
+  '0%': {x:0, y:0},
+  '50%': {x:0, y:20},
+  '100%': {x:0, y:0}
+},
+{
+  repeat: Infinity
+}
+));
+var Nose = new Circle(200,320,135);
+Nose.fill('green');
+Nose.stroke('black',2);
+Nose.addTo(stage);
+var LeftNose = new Ellipse (164,230,10,15);
+LeftNose.fill('black');
+LeftNose.addTo(stage);
+var RightNose = new Ellipse (234,230,10,15);
+RightNose.fill('black');
+RightNose.addTo(stage);
+var music = new Audio([ { src: 'mariothemesong.mp3' } ]);
+	music.addTo(stage)
+	music.on('load', function()
+	{
+				this.play();
+	});
+		},
+		width: 1000,
+		height: 1000
+	});
+</script></body>
+</html>
